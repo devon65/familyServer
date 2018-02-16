@@ -1,0 +1,37 @@
+CREATE TABLE `User` (
+	`username`	TEXT,
+	`password`	TEXT,
+	`email`	TEXT,
+	`firstName`	TEXT,
+	`lastName`	TEXT,
+	`gender`	TEXT,
+	`personID`	TEXT
+);
+
+CREATE TABLE `AuthToken` (
+	`authToken`	TEXT,
+	`personID`	TEXT
+);
+
+CREATE TABLE `Event` (
+	`eventID`	TEXT,
+	`descendant`	TEXT,
+	`personID`	TEXT,
+	`latitude`	REAL,
+	`longitude`	REAL,
+	`country`	TEXT,
+	`city`	TEXT,
+	`eventType`	TEXT,
+	`year`	TEXT
+);
+
+CREATE TABLE `Person` (
+	`personID`	TEXT,
+	`descendant`	TEXT,
+	`firstName`	TEXT,
+	`lastName`	TEXT,
+	`gender`	TEXT,
+	`father`	TEXT,
+	`mother`	TEXT,
+	`spouse`	TEXT
+);
